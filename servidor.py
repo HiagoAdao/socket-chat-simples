@@ -1,6 +1,6 @@
 import socket
 from logging import Logger
-from protocol import ChatMessage
+from protocolo import ChatMessage
 from logger import configurar_logger, obter_logger
 
 def iniciar_servidor() -> None:

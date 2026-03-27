@@ -1,10 +1,9 @@
 import socket
 from logging import Logger
-from protocol import ChatMessage
+from protocolo import ChatMessage
 from logger import configurar_logger, obter_logger
 
 def iniciar_cliente() -> None:
-    configurar_logger()
     log_cliente: Logger = obter_logger("Cliente")
 
     cliente_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -30,4 +29,5 @@ def iniciar_cliente() -> None:
     cliente_socket.close()
 
 if __name__ == "__main__":
+    configurar_logger()
     iniciar_cliente()

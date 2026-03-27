@@ -6,7 +6,7 @@ def configurar_logger() -> None:
         level=logging.INFO,
         format='[%(asctime)s] [%(name)s] %(message)s',
         datefmt='%H:%M:%S',
-        force=True
+        force=True,
     )
 
 def obter_logger(nome: str) -> logging.Logger:
